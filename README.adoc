@@ -1,0 +1,13 @@
+== Rust tutorialやってみた
+
+=== なんで始めるんすか？
+
+ICFPCとかで結構盛り上がっていたのと、最近使われるところが増えているみたいな噂を聞いたから。
+すごいよね。
+
+=== 何やるんすか？
+
+まずtutorialをします。
+
+link:https://rust-lang-ja.github.io/the-rust-programming-language-ja/1.6/book/[]
+
