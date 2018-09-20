@@ -38,7 +38,34 @@ fn samples1() {
     }
 }
 
+fn foo() {}
+
+fn print_number(x: i32) {
+    println!("x is: {}", x);
+}
+
+fn print_sum(x: i32, y: i32) {
+    println!("sum is: {}", x + y);
+}
+
+fn add_one(x: i32) -> i32 {
+    x + 1
+}
+
+fn diverges() -> ! {
+    panic!("This function never returns!");
+}
+
 fn main() {
     println!("Hello, World!");
     samples1();
+    print_number(add_one(5));
+    print_sum(19, 3);
+
+    // let x: i32 = diverges();
+    // let x: String = diverges();
+    // diverges();
+    let f: fn(i32) -> i32 = add_one;
+    let f = add_one;
+    println!("{}", f(5));
 }
